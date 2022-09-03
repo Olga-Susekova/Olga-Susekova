@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center" >Заполните анкету</h1>
+    <br>
+    <form action="https://fe.it-academy.by/TestForm.php" method="post" >
+    <fieldset>
+        <legend>Личные данные</legend>
+        <input autofocus id="Surname" type="text" name="Surname" pattern="[А-Яа-яЁё ^\s]{1-25}" placeholder="Фамилия" required>* 
+        <br>
+        <input  id="Name" type="text" name="Name" pattern="[А-Яа-яЁё ^\s]{1-20}" placeholder="Имя" required>*
+        <br>
+        <input  id="F" type="text" name="F" pattern="[А-Яа-яЁё ^\s]{1-24}" placeholder="Отчество" required>*
+        <br>
+        <fieldset>
+            <legend>Паспортные данные</legend>
+            <input type="text" name="seria" MAXLENGTH="2" minlength="2" pattern="[A-Z]{2}" placeholder="AA" required>
+            <input type="text" name="N" MAXLENGTH="7" minlength="7" pattern="[0-9]{7}" placeholder="1234567" required>
+        </fieldset>
+        <fieldset>
+            <legend>Дата рождения</legend>
+            <input type="text" name="year"  pattern="[0-9]{4}" placeholder="2000" >
+            <br>
+            <select name="Month">
+                <option value="month">Январь</option>
+                <option value="month">Февраль</option>
+                <option value="month">Март</option>
+                <option value="month">Апрель</option>
+                <option value="month">Май</option>
+                <option value="month">Июнь</option>
+                <option value="month">Июль</option>
+                <option value="month">Август</option>
+                <option value="month">Сентябрь</option>
+                <option value="month">Октябрь</option>
+                <option value="month">Ноябрь</option>
+                <option value="month">Декабрь</option>
+            </select>
+            <br>
+            <input type="number" min="1" max="31" step="1">
+            <br>
+        </fieldset>
+        <select name="nation" id="nat" required>
+            <option value="nation">РБ</option>
+            <option value="nation">РФ</option>
+            <option value="nation">КЗ</option>
+            <option value="nation">MD</option>
+            <option value="nation">UA</option>
+        </select>
+        <label for="nat">(национальность)</label>
+        <br>
+        <label for="adrs">Адрес:</label> 
+        <br>
+        <textarea name="Adress" cols="20" rows="2" id="adrs" ></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Интересы</legend>
+        <fieldset>
+            <legend>Хобби</legend>
+            <input type="checkbox" name="hobbies" id="h1">
+            <label for="h1">Рыбалка</label> <br>
+            <input type="checkbox" name="hobbies" id="h2">
+            <label for="h2">Астрономия</label> <br>
+            <input type="checkbox" name="hobbies" id="h3">
+            <label for="h3">Дайвинг</label> <br>
+            <input type="checkbox" name="hobbies" id="h4">
+            <label for="h4">Марки</label>
+        </fieldset>
+        <fieldset>
+            <legend>Домашние животные</legend>
+            <select name="pets" multiple size="12" multiple>
+                <optgroup label="Попугаи">
+                    <option value="1">Волнистый</option>
+                    <option value="2">Ара</option>
+                    <option value="3">Неразлучник</option>
+                </optgroup>
+                <optgroup label="Рыба">
+                    <option value="4">Караси</option>
+                    <option value="5">Окуни</option>
+                    <option value="6">Осетр</option>
+                </optgroup>
+                <optgroup label="Птицы">
+                    <option value="7">Стая ворон</option>
+                    <option value="8">Аист</option>
+                    <option value="9">Орлы</option>
+                    </optgroup>
+                </select>
+        </fieldset>
+    </fieldset>
+    <fieldset>
+        <legend>Данные для входа и восстановления пароля</legend> <br>
+        <input type="text" name="log" minlength="5" maxlength="20" pattern="[A-Za-z^\s]{5,}" placeholder="Логин" required>* <br>
+        <input type="text" name="pass" minlength="10" maxlength="20" pattern="[A-Za-z^\s]{10,}" placeholder="Пароль" required autocomplete="off">*
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Координаты</legend>
+        <input type="email" name="email" pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})" placeholder="введите адрес эл. почты" >
+        <br>
+        <input type="url" name="site" pattern="https://.*" placeholder="введите адрес сайта">
+    </fieldset>
+    <fieldset>
+        <legend>Цифры</legend>
+        <input type="number" min="-2.5" max="2.5" step="0.1">
+        <br>
+        <input type="range" min="1" max="10">
+    </fieldset>
+    <fieldset>
+        <legend>Кнопки управления</legend>
+        <input type="submit" value="Отправить" >
+        <input type="reset" value="Сбросить">
+        <br>
+        <input type="image" src="data:image/jpeg;base64,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" alt="">
+    
+        
+    </fieldset>
+
+
+</body>
+</html>
