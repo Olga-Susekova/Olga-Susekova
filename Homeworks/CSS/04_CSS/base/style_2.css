@@ -1,0 +1,22 @@
+th {
+    background-color: darkgray;
+}
+td {
+    border-bottom: dotted grey;
+    border-right: dotted grey;
+}
+td:first-child {
+    font-weight: bold;
+}
+tr:nth-child(odd) {
+    background: #C9E3FE;
+}
+
+tr:last-child td:last-child {
+    text-align: center;
+    border: 0px;
+    background-color: white;
+}
+tr:hover {
+    background-color: hotpink;
+}

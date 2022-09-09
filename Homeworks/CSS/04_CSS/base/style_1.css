@@ -1,0 +1,19 @@
+div {
+    height: 6em;
+    width: 600px;
+    border: 1px solid #464646;
+    padding: px 18px;
+    border-radius: 0px 40px 0px 36px;
+
+}
+p span{
+    position:relative;
+    top: -20px;
+    left: 150px;
+    display: none;
+
+}
+p:hover span{
+    display:block;
+    
+}

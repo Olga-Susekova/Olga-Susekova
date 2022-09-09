@@ -97,7 +97,7 @@
         div.MenuLevel1 > div:hover div.MenuLevel2 { 
             display:block; 
             position: absolute; 
-            top: 100%; 
+            left: 100%; 
             z-index: 1 ;
         }
     }
