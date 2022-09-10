@@ -5,10 +5,12 @@
     margin-bottom: .2em;
 }
 .article {
-    background-color: rgba(0, 0, 211, 0.295);
+    background-color: rgba(4, 4, 124, 0.315);
     margin-bottom: .2em;
     margin-left: 246px;
 }
+
+
 img {
     float: right;
     border-radius: 15px;
