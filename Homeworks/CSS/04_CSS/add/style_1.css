@@ -1,0 +1,28 @@
+div {
+    height: 6em;
+    width: 600px;
+    border: 1px solid #464646;
+    padding: px 18px;
+    border-radius: 0px 40px 0px 36px;
+}
+
+
+/* картинки не отображаются(*/
+div a [href$="word"] ::after {
+    content: url(../base/img/word.jpg);
+}
+
+div a [href$="pdf"] ::after {
+    content: url(../base/img/pdf.png);
+}
+
+div a [href$="archive"] ::after {
+    content: url(../base/img/archive.gif);
+}
+div a [href$="zip"] ::before {
+    content: url(../base/img/zip.png);
+}
+
+h2 > a [href$=""] ::before {
+    content: url(../base/img/doc.jpg);
+}

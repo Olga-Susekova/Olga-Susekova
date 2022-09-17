@@ -11,15 +11,17 @@ td{
 }
 tr:nth-child(odd) td:nth-child(odd){
     background-color: black;
+    color:white;
 }
 tr:nth-child(even) td:nth-child(even){
     background-color: black;
+    color:white;
 }
+
 body table tr {
     counter-reset: number 65;
 }
-td {
+td::before {
     counter-increment: number -1;
-    counter-reset: 65;
     content: counter(number);
 }

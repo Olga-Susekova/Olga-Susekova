@@ -1,15 +1,18 @@
 
-    div.MenuLevel1 {  
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        
-    }
-    div.MenuLevel1 > div { 
+    div{
         font-family: 'Bad Script', cursive;
         font-size: 19px;
         letter-spacing: 0px;
         word-spacing: 0px;
+    }
+    
+    div.MenuLevel1 {  
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all;
+    }
+    div.MenuLevel1 > div { 
         line-height: 50px;
         width: 150px;  
         background-color: rgba(252, 240, 133, 0.418); 
@@ -18,8 +21,10 @@
         position: relative; 
         cursor: pointer ;
         transition-duration: 2s;
+        overflow: hidden;
     }
     div.MenuLevel1 > div:hover { 
+        overflow-block: ;
         top: 3px;
         font-family: 'Bad Script', cursive;
         font-size: 19px;
@@ -27,6 +32,7 @@
         word-spacing: 0px;
         line-height: 50px;
         width: 150px;  
+        height: 260px;
         background-color: rgba(14, 13, 12, 0.418); 
         border: solid rgb(5, 5, 1) 2px; 
         border-radius: 10px;
@@ -37,6 +43,7 @@
     div.MenuLevel2 { 
         width: 150px; 
         display: none ;
+        left: 0px;
         
     }
     div.MenuLevel2 > div { 
@@ -45,29 +52,25 @@
         border-radius: 10px;
         cursor: pointer ;
         transition-duration: 2s;
-        
-       
-        
+        overflow: hidden; 
     }
-    div.MenuLevel2 > div:hover { 
+   /* div.MenuLevel2 > div:hover { 
         display: block;
-        background-color: rgba(85, 30, 78, 0.171); 
-        border: solid rgb(22, 1, 16) 2px; 
-        border-radius: 10px;
-        position: relative;
-        right: 150px;
         cursor: pointer ;
         transition-duration: 2s;
-        
-       
-    }
-/* C выезжающим меню подзапуталась)))*/
+        transition:ease-in-out;
+        position: relative;
+        right: 150px;
+
+    }*/
+    
 
     div.MenuLevel1 > div:hover div.MenuLevel2 { 
         display:block; 
         position: inherit; 
-        left: 100%; 
+        left:0%; 
         z-index: 1 ;
+        transition-duration: 2s;
     }
 
     @media all and ( min-width: 1071px) {
@@ -75,11 +78,21 @@
             display: flex;
             flex-direction: row;
             align-items: flex-start;
+            transition: all;
+            
+        }
+            div.MenuLevel1:hover {  
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                height: 300px;
+                transition-duration: 2s;
+                
+                
         }
         div.MenuLevel1 > div { 
             font-family: 'Bad Script', cursive;
             font-size: 19px;
-            letter-spacing: 0px;
             word-spacing: 0px;
             line-height: 50px;
             width: 150px;  
@@ -88,11 +101,13 @@
             border-radius: 10px;
             position: relative; 
             cursor: pointer ;
+            transition-duration: 5s;
         }
         div.MenuLevel2 { 
             display: none;
             position: inherit;
             width: 150px; 
+            left: 0px;
             
             
             
@@ -102,15 +117,15 @@
             border: solid rgb(255, 0, 179) 2px; 
             border-radius: 10px;
             cursor: pointer ;
-            
+            overflow: hidden;
         }
         div.MenuLevel1 > div:hover div.MenuLevel2 { 
             display:block; 
             position: inherit; 
-            top:100%;
+            top:0%;
             z-index: 1 ;
-            transition: all;
             transition-duration: 1s;
+            
             
         }
     }

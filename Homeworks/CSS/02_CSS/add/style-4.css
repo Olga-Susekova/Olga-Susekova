@@ -1,30 +1,19 @@
-.table {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
 
-    
-}
-.row1{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-}
 .container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0.2em;
+    
+    
 }
 .navigation {
     position: relative;
     width: 15em;
     background-color: rgba(145, 127, 127, 0.116);
     margin-bottom: 0.2em;
+    
 }
 main {
-    
+    display: flex;
+    flex-grow: 1;
 }
 .article1 {
    
@@ -55,7 +44,5 @@ img {
 
 
 .footer {
-    float: left;
     background-color: rgba(120, 134, 123, 0.233);
-    
 }
