@@ -1,0 +1,15 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 60px 150px 150px 500px 400px;
+}
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+div h2, a {
+    color:hsl(197deg 69% 54%);
+}
+ul {
+    list-style-type: circle;
+}
