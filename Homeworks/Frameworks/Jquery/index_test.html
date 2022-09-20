@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        
+        fieldset{
+            height: 150px;
+            width:400px;
+            background-color: rgba(137, 43, 226, 0.295);
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    
+    <fieldset>
+        <h3>Проверка пароля</h3>
+        <input >*Пароль</input><br>
+        <input>*Повторите пароль</input>
+    </fieldset>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+    <script>/*
+        $(Document).ready(function () {
+            alert("Это сообщение, которое выводится при старте страницы");
+
+        });
+        $(document).ready(function($) {
+            $('#test').css('transform','rotate(180deg)')
+        });*/
+        $(document).ready(function ($) {
+            $('input').on('*Повторите пароль',function() {
+                $('input').css('backgroundColor', 'green')
+            })
+            });
+        
+    </script>
+
+</body>
+
+</html>

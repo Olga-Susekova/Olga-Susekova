@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        th {
+            background-color: darkgray;
+        }
+
+        td {
+            border-bottom: dotted grey;
+            border-right: dotted grey;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        tr:nth-child(odd) {
+            background: #C9E3FE;
+        }
+
+        tr:last-child td:last-child {
+            text-align: center;
+            border: 0px;
+            background-color: white;
+        }
+
+        tr:hover {
+            background-color: hotpink;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>данные01</th>
+            <th>данные02</th>
+        </tr>
+        <tr>
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr>
+            <td>Петрова Илонна Петровна</td>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr>
+            <td>Сидоров Илья Игореич</td>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr>
+            <td>Пупин Фёдор Фёдорович</td>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>74323434</td>
+            <td>9232379</td>
+        </tr>
+        <tr>
+            <td>Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>водитель2</td>
+            <td>01.01.1983</td>
+            <td>3234534</td>
+            <td>923123379</td>
+        </tr>
+        <tr>
+            <td colspan="6">ДАННЫЕ О СОТРУДНИКАХ</td>
+        </tr>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+ </script>
+ <script>
+    $(document).ready(function(){
+            $(".tr").click(function(){
+                
+                $(".tr") 
+            });
+ </script>
+        
+
+</body>
+
+</html>

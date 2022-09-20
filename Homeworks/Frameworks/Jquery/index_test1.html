@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        /*C Джавой вообще все сложно, я пыталась понять, каким способом сравнить что обе ячейки паролей заполнены одинаково((( */
+        #test{
+            height: 300px;
+            width:900px;
+            background-color: rgba(137, 43, 226, 0.562);
+        }
+    </style>
+
+    
+</head>
+
+<body>
+    <div id="test">123</div>
+    <button>
+        click
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+        </script>
+    <script>/*
+        $(Document).ready(function () {
+            alert("Это сообщение, которое выводится при старте страницы");
+
+        });
+        $(document).ready(function($) {
+            $('#test').css('transform','rotate(180deg)')
+        });*/
+        $(document).ready(function ($) {
+            $('button').on('click',function() {
+                $('#test').css('backgroundColor', 'green')
+            })
+            });
+        
+    </script>
+
+</body>
+
+</html>
